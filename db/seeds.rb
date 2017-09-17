@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Creature.destroy_all
+
+8.times do
+  Creature.create({
+    name: FFaker::Name.first_name,
+    description: FFaker::DizzleIpsum.sentence,
+    })
+end

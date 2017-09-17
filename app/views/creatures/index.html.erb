@@ -1,0 +1,15 @@
+<% @creatures.each do |creature| %>
+  <p>
+    <strong>Name:</strong> <%= creature.name %><br>
+    <strong>Description:</strong> <%= creature.description %>
+  </p>
+<% end %>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <%= yield %>
+      </div>
+    </div>
+  </div>
+</body>
