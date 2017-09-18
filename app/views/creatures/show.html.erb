@@ -1,7 +1,8 @@
 <h2><%= @creature.name %></h2>
 <hr>
+<div class="container">
 <h3><%= @creature.description %></h3>
+</div>
 <br>
-<%= button_to "Delete", @creature, method: :delete %>
-
-<%= button_to "Return Home", creatures_path, method: :get %>
+  <%= button_to "Delete", @creature, method: :delete %>
+  <%= button_to "Return Home", creatures_path, method: :get %>
