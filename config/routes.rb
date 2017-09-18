@@ -8,6 +8,6 @@ Rails.application.routes.draw do
   get '/creatures/:id/edit', to: "creatures#edit", as: "edit_creature"
   patch '/creatures/:id', to: "creatures#update"
   put "/creatures/:id", to: "creatures#update"
-  destroy '/creatures/:id', to: "creatures#destroy"
+  delete '/creatures/:id', to: "creatures#destroy"
 
 end
